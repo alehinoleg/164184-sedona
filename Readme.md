@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Олег Алёхин](https://up.htmlacademy.ru/htmlcss/23/user/164184).
-* Наставник: `Неизвестно`.
+* Наставник:[Антон Попов](https://htmlacademy.ru/profile/joker).
 
 ---
 
