@@ -5,9 +5,9 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-  	<header class="main-header">
-  		<nav class="main-navigation">
-  			<a>
+  	<header class="header">
+  		<nav class="navigation">
+  			<a href="index.html">
   				<img src="siti.jpg" alt="citi of sedona">
   			</a>
 
@@ -15,15 +15,16 @@
   				<li><a href="#">Информация</a></li>
   				<li><a href="#">Фото и видио</a></li>
   				<li><a href="#">Карта штата</a></li>
-  				<li><a href="#">Гостиницы</a></li>
-  			</ul>	
+  				<li class="current"><a>Гостиницы</a></li>
+  			</ul>
   		</nav>
   	</header>
 
     <main class="container">
       <section class="filter">
+        <form action="#">
         <h1 class="visually-hidden">Фильтр отелей</h1>
-        
+
         <h2>Инфроструктура:</h2>
         <input type="checkbox" id="subscribe-field1" checked>
         <label for="subscribe-field1">Бассейн</label>
@@ -46,76 +47,74 @@
 
         <!--Тут еще надо доработать-->
         <input type="submit" value="Показать">
+        </form>
       </section>
 
       <section class="sort">
-        <h2>Найденно:3</h2>  
+        <h2>Найденно:3</h2>
 
         <p>
           Сортировка
-          <a href="#">По цене</a>
+          <a class="active">По цене</a>
           <a href="#">По типу</a>
           <a href="#">По рейтингу</a>
-          <a href="#">вверх</a>
-          <a href="#">вниз</a>
-        </p>      
+          <a class="up">вверх</a>
+          <a class="down" href="#">вниз</a>
+        </p>
       </section>
 
       <section class="catalog">
         <h2 class="visually-hidden">Список найденных отелей</h2>
         <ul class="catalog-list">
-          
+
           <li class="catalog-item">
+            <a href="#"><img src="img/hotel-1.jpg" alt="Amara Resort & Spa"></a>
             <h3><a href="#">Amara Resort & Spa</a></h3>
-            <p class="catalog-item-img">
-              <a href="#"><img src="img/hotel-1.jpg" alt="Amara Resort & Spa"></a>
-            </p>
             <b>Гостиница От 4000 Р.</b>
             <a href="#">Подробнее</a>
             <a href="#">Забронировать</a>
-            <b>Рейтинг:8,5</b>
+            <div class="stars stars-4"></div>
+            <b>Рейтинг: 8,5</b>
           </li>
 
           <li class="catalog-item">
+            <a href="#"><img src="img/hotel-2.jpg" alt="Desert Quail Inn"></a>
             <h3><a href="#">Desert Quail Inn</a></h3>
-            <p class="catalog-item-img">
-              <a href="#"><img src="img/hotel-2.jpg" alt="Desert Quail Inn"></a>
-            </p>
             <b>Мотель От 3000 Р.</b>
             <a href="#">Подробнее</a>
             <a href="#">Забронировать</a>
-            <b>Рейтинг:8,9</b>
+            <div class="stars stars-3"></div>
+            <b>Рейтинг: 8,9</b>
           </li>
 
           <li class="catalog-item">
+            <a href="#"><img src="img/hotel-3.jpg" alt="Villas at Poco Diablo"></a>
             <h3><a href="#">Villas at Poco Diablo</a></h3>
-            <p class="catalog-item-img">
-              <a href="#"><img src="img/hotel-3.jpg" alt="Villas at Poco Diablo"></a>
-            </p>
             <b>Апартаменты От 2000 Р.</b>
             <a href="#">Подробнее</a>
             <a href="#">Забронировать</a>
-            <b>Рейтинг:9,2</b>
+            <div class="stars stars-2"></div>
+            <b>Рейтинг: 9,2</b>
           </li>
         </ul>
       </section>
-      
+
     </main>
 
-    <footer class="main-foter">
+    <footer class="footer">
       <p class="hashtag">#visitSEDONA</p>
 
-      <div class="footer-social">
-        <ul>
-          <li><a href="#" class="social-buttom">Твиттер</a></li>
-          <li><a href="#" class="social-buttom">Фейсбук</a></li>
-          <li><a href="#" class="social-buttom">Ютуб</a></li>
+
+        <ul class="social">
+          <li><a href="#" class="social-button tw">Твиттер</a></li>
+          <li><a href="#" class="social-button fb">Фейсбук</a></li>
+          <li><a href="#" class="social-button yt">Ютуб</a></li>
         </ul>
-      </div>
-      
+
+
       <p class="footer-copyright">
         <b>Website by</b>
-        <a href="#"><img src="#" alt="html Academy"></a>
+        <a class="html-Academy-logo" href="https://up.htmlacademy.ru/htmlcss/23">html Academy</a>
       </p>
     </footer>
 
