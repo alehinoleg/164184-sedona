@@ -22,31 +22,39 @@
 
     <main class="container">
       <section class="filter">
-        <form action="#">
-        <h1 class="visually-hidden">Фильтр отелей</h1>
+        <form action="#" method="post">
+          <h1 class="visually-hidden">Фильтр отелей</h1>
+          <fieldset>
+            <legend>Инфроструктура:</legend>
+            <input type="checkbox" id="subscribe-field1" checked>
+            <label for="subscribe-field1">Бассейн</label>
 
-        <h2>Инфроструктура:</h2>
-        <input type="checkbox" id="subscribe-field1" checked>
-        <label for="subscribe-field1">Бассейн</label>
+            <input type="checkbox" id="subscribe-field2">
+            <label for="subscribe-field2">Парковка</label>
 
-        <input type="checkbox" id="subscribe-field2">
-        <label for="subscribe-field2">Парковка</label>
+            <input type="checkbox" id="subscribe-field3">
+            <label for="subscribe-field3">wi-fi</label>
+          </fieldset>
 
-        <input type="checkbox" id="subscribe-field3">
-        <label for="subscribe-field3">wi-fi</label>
+          <fieldset>
+            <legend>Тип жилья:</legend>
+            <input type="checkbox" id="subscribe-field4" checked>
+            <label for="subscribe-field4">Гостиница</label>
 
-        <h2>Тип жилья:</h2>
-        <input type="checkbox" id="subscribe-field4" checked>
-        <label for="subscribe-field4">Гостиница</label>
+            <input type="checkbox" id="subscribe-field5" checked>
+            <label for="subscribe-field5">Мотель</label>
 
-        <input type="checkbox" id="subscribe-field5" checked>
-        <label for="subscribe-field5">Мотель</label>
+            <input type="checkbox" id="subscribe-field6" checked>
+            <label for="subscribe-field6">Апартаменты</label>
+          </fieldset>
 
-        <input type="checkbox" id="subscribe-field6" checked>
-        <label for="subscribe-field6">Апартаменты</label>
+          <fieldset>
+            <legend>Стоимость в сутки(р)</legend>
+            <input type="range" min="0" max="3000">
+          </fieldset>
 
-        <!--Тут еще надо доработать-->
-        <input type="submit" value="Показать">
+          <input type="submit" value="Показать">
+
         </form>
       </section>
 
@@ -68,8 +76,10 @@
         <ul class="catalog-list">
 
           <li class="catalog-item">
-            <a href="#"><img src="img/amara.jpg" width="135" height="90" alt="Amara Resort & Spa"></a>
-            <h3><a href="#">Amara Resort & Spa</a></h3>
+            <a href="#">
+              <img src="img/amara.jpg" width="135" height="90" alt="Amara Resort & Spa">
+              <h3>Amara Resort & Spa</h3>
+            </a>
             <b>Гостиница От 4000 Р.</b>
             <a href="#">Подробнее</a>
             <a href="#">Забронировать</a>
@@ -78,8 +88,10 @@
           </li>
 
           <li class="catalog-item">
-            <a href="#"><img src="img/desert.jpg" width="135" height="90" alt="Desert Quail Inn"></a>
-            <h3><a href="#">Desert Quail Inn</a></h3>
+            <a href="#">
+              <img src="img/desert.jpg" width="135" height="90" alt="Desert Quail Inn">
+              <h3>Desert Quail Inn</h3>
+            </a>
             <b>Мотель От 3000 Р.</b>
             <a href="#">Подробнее</a>
             <a href="#">Забронировать</a>
@@ -88,8 +100,10 @@
           </li>
 
           <li class="catalog-item">
-            <a href="#"><img src="img/villas.jpg"  width="135" height="90" alt="Villas at Poco Diablo"></a>
-            <h3><a href="#">Villas at Poco Diablo</a></h3>
+            <a href="#">
+              <img src="img/villas.jpg"  width="135" height="90" alt="Villas at Poco Diablo">
+              <h3>Villas at Poco Diablo</h3>
+            </a>
             <b>Апартаменты От 2000 Р.</b>
             <a href="#">Подробнее</a>
             <a href="#">Забронировать</a>
@@ -106,9 +120,9 @@
 
 
         <ul class="social">
-          <li><a href="#" class="social-button tw">Твиттер</a></li>
-          <li><a href="#" class="social-button fb">Фейсбук</a></li>
-          <li><a href="#" class="social-button yt">Ютуб</a></li>
+          <li><a href="#" class="social-buttom" aria-label="Мы в твиттере">Твиттер</a></li>
+          <li><a href="#" class="social-buttom" aria-label="Мы в фейсбуке">Фейсбук</a></li>
+          <li><a href="#" class="social-buttom" aria-label="Мы в ютубе">Ютуб</a></li>
         </ul>
 
 

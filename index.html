@@ -84,9 +84,9 @@
 
   		<div class="footer-social">
   			<ul>
-  				<li><a href="#" class="social-buttom">Твиттер</a></li>
-  				<li><a href="#" class="social-buttom">Фейсбук</a></li>
-  				<li><a href="#" class="social-buttom">Ютуб</a></li>
+  				<li><a href="#" class="social-buttom" aria-label="Мы в твиттере">Твиттер</a></li>
+  				<li><a href="#" class="social-buttom" aria-label="Мы в фейсбуке">Фейсбук</a></li>
+  				<li><a href="#" class="social-buttom" aria-label="Мы в ютубе">Ютуб</a></li>
   			</ul>
   		</div>
 
@@ -98,8 +98,29 @@
 
   	<section class="modal-search">
   		<h2 class="visually-hidden">Форма поиска гостиницы.</h2>
-  		<!--Здесь будет форма-->
-  		<input type="submit" value="Найти">
+  		<form action="#" method="post">
+        <label>
+          Дата заезда
+          <input type="text" name="date" placeholder="24 апреля 2017">
+        </label>
+
+        <label>
+          Дата выезда:
+          <input type="text" name="date" placeholder="4 июля 2017">
+        </label>
+
+        <label>
+          Взрослые:
+          <input type="number" min="0">
+        </label>
+
+        <label>
+          Дети:
+          <input type="number" min="0">
+        </label>
+
+  		  <input type="submit" value="Найти">
+      </form>
   	</section>
 
   </body>
