@@ -14,9 +14,8 @@ a{
   text-decoration: none;
 }
 
-
+/*index.html*/
 /* Основное меню*/
-
 .site-navigation{
   list-style: none;
 }
@@ -102,3 +101,123 @@ a{
   background-color: #503e33;
   color:#928a85;
 }
+
+/*footer*/
+.footer-social ul{
+  list-style: none;
+}
+
+.footer-social a{
+  background-color: #81b3d2;
+  color:#ffffff;
+}
+
+.footer-social a:hover,
+.footer-social a:focus{
+  background-color: #669ec0;
+}
+
+.footer-social a:active{
+  background-color: #5496bd;
+  color:#88b6d1;
+}
+
+/*modal-window*/
+.modal-search .text{
+  background-color: #f2f2f2;
+}
+
+.modal-search .text:hover,
+.modal-search .text:focus{
+  background-color: #ebebeb;
+}
+
+.modal-search .submit{
+  background-color: #81b3d2;
+  color: #ffffff;
+}
+
+.modal-search .submit:hover,
+.modal-search .submit:focus{
+  background-color: #669ec0;
+}
+
+.modal-search .submit:active{
+  background-color: #5496bd;
+  color:#94b9d2;
+}
+
+
+/*catalog.html*/
+/*sort*/
+.sort .active{
+  color: #81b3d2;
+  text-decoration: none;
+  border:none;
+}
+
+.sort a{
+  color: #cacaca;
+  border-bottom: 1px dashed #81b3d2;
+}
+
+.sort a:hover,
+.sort a:focus{
+  color: #81b3d2;
+}
+
+.sort a:active{
+  color: #000000;
+  border: none;
+}
+
+/*catalog*/
+.catalog-list{
+  list-style: none;
+}
+
+.catalog-item h3{
+  color: #000000;
+}
+
+.catalog-item h3:hover,
+.catalog-item h3:focus{
+  color: #81b3d2;
+}
+
+.catalog-item h3:active{
+  color: #cacaca;
+}
+
+.catalog-list .read-more{
+  color:#ffffff;
+  background-color: #81b3d2;
+}
+
+.catalog-list .read-more:hover,
+.catalog-list .read-more:focus{
+  background-color: #669ec0;
+}
+
+.catalog-list .read-more:active{
+  background-color: #5496bd;
+  color: #94b9d2;
+}
+
+.catalog-list .reservation{
+  background-color: #766357;
+  color: #ffffff;
+}
+
+.catalog-list .reservation:hover,
+.catalog-list .reservation:focus{
+  background-color: #604e43;
+}
+
+.catalog-list .reservation:active{
+  background-color: #503e33;
+  color:#928a85;
+}
+
+
+
