@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet"  href="css/normalize.css">
+    <link rel="stylesheet"  href="css/style.css">
     <title>HTML Academy: Седона</title>
   </head>
   <body>
@@ -63,14 +63,23 @@
 
       <section class="sort">
         <h2>Найденно:3</h2>
-
         <p>
           Сортировка
           <a class="active">По цене</a>
           <a href="#">По типу</a>
           <a href="#">По рейтингу</a>
-          <a class="up" href="#"><img src="img/icon-up-dir.svg">вверх</a>
-          <a class="down" href="#"><img src="img/icon-down-dir.svg">вниз</a>
+          <a class="up-down" href="#">
+
+            <svg width="11px" height="10px">
+              <polyline fill="#cacaca" points="5.5,0 0,10 11,10 "/>
+            </svg>
+          </a>
+          <a class="up-down" href="#">
+
+            <svg width="11px" height="10px" >
+              <polyline fill="#cacaca" points="5.5,10 0,0 11,0 "/>
+            </svg>
+          </a>
         </p>
       </section>
 

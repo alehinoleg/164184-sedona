@@ -2,7 +2,7 @@ body{
   margin: 0;
   padding: 0;
 
-  font-family: "PT Sans Regular", Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
   color: #333333;
@@ -161,9 +161,22 @@ a{
   border-bottom: 1px dashed #81b3d2;
 }
 
+.sort .up-down{
+  border-bottom: none;
+}
+
 .sort a:hover,
 .sort a:focus{
   color: #81b3d2;
+}
+
+.sort .up-down:hover polyline,
+.sort .up-down:focus polyline{
+  fill: #231f20;
+}
+
+.sort .up-down:active polyline{
+  fill: #81b3d2;
 }
 
 .sort a:active{
