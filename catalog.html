@@ -40,6 +40,7 @@
                   <input type="checkbox" id="subscribe-field3">
                   <label for="subscribe-field3">wi-fi</label>
                 </li>
+
               </ul>
             </fieldset>
 
@@ -61,26 +62,27 @@
                 </ul>
             </fieldset>
 
-            <fieldset class="price">
-              <legend>Стоимость в сутки (р)</legend>
-              <div class="border">
-                <label>от
-                  <input type="text" name="min-price" value="0" class="min-price">
-                </label>
+            <div class="price-submit">
+              <fieldset class="price">
+                <legend>Стоимость в сутки (р)</legend>
+                <div class="border">
+                  <label>от
+                    <input type="text" name="min-price" value="0" class="min-price">
+                  </label>
 
-                <label>до
-                  <input type="text" name="max-price" value="3000" class="max-price">
-                </label>
-              </div>
-
-              <div class="slider"></div>
+                  <label>до
+                    <input type="text" name="max-price" value="3000" class="max-price">
+                  </label>
+                </div>
+                <div class="slider"></div>
+              </fieldset>
               <input type="submit" value="Показать" class="submit-filter">
-            </fieldset>
+            </div>
           </form>
         </section>
 
         <section class="sort">
-          <h2>Найденно: 3</h2>
+          <h2>Найдено: 3</h2>
           <div class="sort-filter">
             <p>Сортировка</p>
             <a class="active">По цене</a>
@@ -114,13 +116,17 @@
                 <a href="#">
                   <h3>Amara Resort & Spa</h3>
                 </a>
-                <b>Гостиница</b>
-                <b>От 4000 Р.</b>
-                <a href="#" class="read-more">Подробнее</a>
-                <a href="#" class="reservation">Забронировать</a>
+                <div class="hotel-item">
+                  <b>Гостиница</b>
+                  <a href="#" class="read-more">Подробнее</a>
+                </div>
+                <div class="booking">
+                  <b>От 4000 Р.</b>
+                  <a href="#" class="reservation">Забронировать</a>
+                </div>
               </div>
               <div class="catalog-info1">
-                <div class="stars stars-4"></div>
+                <div class="stars stars-2"></div>
                 <b>Рейтинг: 8,5</b>
               </div>
             </li>
@@ -133,13 +139,19 @@
                 <a href="#">
                   <h3>Desert Quail Inn</h3>
                 </a>
-                <b>Мотель </b>
-                <b>От 3000 Р.</b>
-                <a href="#" class="read-more">Подробнее</a>
-                <a href="#" class="reservation">Забронировать</a>
+                <div class="hotel-item">
+                  <b>Мотель </b>
+                  <a href="#" class="read-more">Подробнее</a>
+                </div>
+                <div class="booking">
+                  <b>От 3000 Р.</b>
+                  <a href="#" class="reservation">Забронировать</a>
+                </div>
               </div>
-              <div class="stars stars-3"></div>
-              <b>Рейтинг: 8,9</b>
+              <div class="catalog-info1">
+                <div class="stars stars-3"></div>
+                <b>Рейтинг: 8,9</b>
+              </div>
             </li>
 
             <li class="catalog-item">
@@ -150,20 +162,26 @@
                 <a href="#">
                   <h3>Villas at Poco Diablo</h3>
                 </a>
-                <b>Апартаменты</b>
-                <b>От 2000 Р.</b>
-                <a href="#" class="read-more">Подробнее</a>
-                <a href="#" class="reservation">Забронировать</a>
+                <div class="hotel-item">
+                  <b>Апартаменты</b>
+                  <a href="#" class="read-more">Подробнее</a>
+                </div>
+                <div class="booking">
+                  <b>От 2000 Р.</b>
+                  <a href="#" class="reservation">Забронировать</a>
+                </div>
               </div>
-              <div class="stars stars-2"></div>
-              <b>Рейтинг: 9,2</b>
+              <div class="catalog-info1">
+                <div class="stars stars-4"></div>
+                <b>Рейтинг: 9,2</b>
+              </div>
             </li>
           </ul>
         </section>
 
       </main>
 
-          <footer class="main-foter">
+          <footer class="main-foter1">
         <p class="hashtag">#visitSEDONA</p>
 
         <div class="footer-social">
