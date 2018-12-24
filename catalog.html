@@ -13,10 +13,10 @@
         <nav class="main-navigation">
           <a class="logo" href="index.html"><img src="img/logo.svg" width="140" height="72" alt="citi of sedona"></a>
           <ul class="site-navigation">
-            <li><a href="#" class="info">Информация</a></li>
-            <li><a href="#" class="photo-and-video">Фото и видео</a></li>
-            <li><a href="#" class="state-map">Карта штата</a></li>
-            <li><a href="catalog.html" class="hotel">Гостиницы</a></li>
+            <li class="info-li"><a href="#" class="info">Информация</a></li>
+            <li class="photo-and-video-li"><a href="#" class="photo-and-video">Фото и видео</a></li>
+            <li class="state-map-li"><a href="#" class="state-map">Карта штата</a></li>
+            <li class="hotel-li"><a href="catalog.html" class="hotel hotel-active">Гостиницы</a></li>
           </ul>
         </nav>
       </header>
@@ -93,13 +93,13 @@
           <div class="up">
             <a class="up-down" href="#">
               <svg width="11px" height="10px">
-                <polyline fill="#cacaca" points="5.5,0 0,10 11,10 "/>
+                <polyline fill="currentColor" points="5.5,0 0,10 11,10 "/>
               </svg>
             </a>
 
-            <a class="up-down" href="#">
+            <a class="up-down active" href="#">
               <svg width="11px" height="10px" >
-                <polyline fill="#81b3d2" points="5.5,10 0,0 11,0 "/>
+                <polyline fill="currentColor" points="5.5,10 0,0 11,0 "/>
               </svg>
             </a>
           </div>
@@ -126,7 +126,7 @@
                 </div>
               </div>
               <div class="catalog-info1">
-                <div class="stars stars-2"></div>
+                <div class="stars stars-2"><p class="visually-hidden">Четыре звезды</p></div>
                 <b>Рейтинг: 8,5</b>
               </div>
             </li>
@@ -149,7 +149,7 @@
                 </div>
               </div>
               <div class="catalog-info1">
-                <div class="stars stars-3"></div>
+                <div class="stars stars-3"><p class="visually-hidden">Три звезды</p></div>
                 <b>Рейтинг: 8,9</b>
               </div>
             </li>
@@ -172,7 +172,7 @@
                 </div>
               </div>
               <div class="catalog-info1">
-                <div class="stars stars-4"></div>
+                <div class="stars stars-4"><p class="visually-hidden">Две звезды</p></div>
                 <b>Рейтинг: 9,2</b>
               </div>
             </li>
