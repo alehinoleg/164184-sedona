@@ -26,18 +26,18 @@
           <form action="#" method="post">
             <h1 class="visually-hidden">Фильтр отелей</h1>
             <fieldset class="infrastructure">
-              <legend>Инфроструктура:</legend>
+              <legend>Инфраструктура:</legend>
               <ul class="infrastructure-item">
                 <li>
-                  <input type="checkbox" id="subscribe-field1" checked>
+                  <input type="checkbox" id="subscribe-field1" checked class="visually-hidden">
                   <label for="subscribe-field1">Бассейн</label>
                 </li>
                 <li>
-                  <input type="checkbox" id="subscribe-field2">
+                  <input type="checkbox" id="subscribe-field2" class="visually-hidden">
                   <label for="subscribe-field2">Парковка</label>
                 </li>
                 <li>
-                  <input type="checkbox" id="subscribe-field3">
+                  <input type="checkbox" id="subscribe-field3" class="visually-hidden">
                   <label for="subscribe-field3">wi-fi</label>
                 </li>
 
@@ -48,15 +48,15 @@
               <legend>Тип жилья:</legend>
                 <ul class="house-type-item">
                   <li>
-                    <input type="checkbox" id="subscribe-field4" checked>
+                    <input type="checkbox" id="subscribe-field4" checked class="visually-hidden">
                     <label for="subscribe-field4">Гостиница</label>
                   </li>
                   <li>
-                    <input type="checkbox" id="subscribe-field5" checked>
+                    <input type="checkbox" id="subscribe-field5" checked class="visually-hidden">
                     <label for="subscribe-field5">Мотель</label>
                   </li>
                   <li>
-                    <input type="checkbox" id="subscribe-field6" checked>
+                    <input type="checkbox" id="subscribe-field6" checked class="visually-hidden">
                     <label for="subscribe-field6">Апартаменты</label>
                   </li>
                 </ul>
@@ -64,7 +64,7 @@
 
             <div class="price-submit">
               <fieldset class="price">
-                <legend>Стоимость в сутки (р)</legend>
+                <legend>Стоимость в сутки (р):</legend>
                 <div class="border">
                   <label>от
                     <input type="text" name="min-price" value="0" class="min-price">
@@ -75,6 +75,8 @@
                   </label>
                 </div>
                 <div class="slider"></div>
+                <div class="slider-bar slider-bar-max"></div>
+                <div class="slider-bar slider-bar-min"></div>
               </fieldset>
               <input type="submit" value="Показать" class="submit-filter">
             </div>
@@ -84,7 +86,7 @@
         <section class="sort">
           <h2>Найдено: 3</h2>
           <div class="sort-filter">
-            <p>Сортировка</p>
+            <p>Сортировка:</p>
             <a class="active">По цене</a>
             <a href="#">По типу</a>
             <a href="#">По рейтингу</a>
