@@ -37,7 +37,7 @@
                   <label for="subscribe-field2">Парковка</label>
                 </li>
                 <li>
-                  <input type="checkbox" id="subscribe-field3" class="visually-hidden">
+                  <input type="checkbox" id="subscribe-field3" class="visually-hidden" disabled>
                   <label for="subscribe-field3">wi-fi</label>
                 </li>
 
@@ -56,7 +56,7 @@
                     <label for="subscribe-field5">Мотель</label>
                   </li>
                   <li>
-                    <input type="checkbox" id="subscribe-field6" checked class="visually-hidden">
+                    <input type="checkbox" id="subscribe-field6" checked class="visually-hidden" disabled>
                     <label for="subscribe-field6">Апартаменты</label>
                   </li>
                 </ul>
@@ -74,9 +74,10 @@
                     <input type="text" name="max-price" value="3000" class="max-price">
                   </label>
                 </div>
-                <div class="slider"></div>
-                <div class="slider-bar slider-bar-max"></div>
-                <div class="slider-bar slider-bar-min"></div>
+                <div class="slider">
+                  <div class="slider-bar slider-bar-max"></div>
+                  <div class="slider-bar slider-bar-min"></div>
+                </div>
               </fieldset>
               <input type="submit" value="Показать" class="submit-filter">
             </div>

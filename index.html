@@ -73,20 +73,20 @@
     		<section class="search">
     			<h2>Заинтересовались?</h2>
     			<p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
-    			<a href="#" class="button">Поиск гостиницы в Седоне</a>
+    			<button class="button">Поиск гостиницы в Седоне</button>
     		</section>
 
     		<section class="maps">
           <h2 class="visually-hidden">Где мы находимся.</h2>
-          <section class="modal-search">
+          <section class="modal-search modal-show">
             <h2 class="visually-hidden">Форма поиска гостиницы.</h2>
             <form action="#" method="post" class="modal-form">
               <div class="group">
                 <label class="modal-item" for="arrival-date">
                   Дата заезда:
                 </label>
-                <input type="text" name="date" id="arrival-date" placeholder="24 апреля 2019" class="text dates">
-                <input type="submit" class="calendar text" value=" ">
+                  <input type="text" name="date" id="arrival-date" placeholder="24 апреля 2019" class="text dates">
+                  <input type="button" class="calendar text" value=" ">
               </div>
 
               <div class="group">
@@ -94,27 +94,22 @@
                   Дата выезда:
                 </label>
                 <input type="text" name="date" id="date-departure" placeholder="4 июля 2019" class="text dates1">
-                <input type="submit" class="calendar text" value=" ">
+                <input type="button" class="calendar text" value=" ">
               </div>
-
 
               <label class="modal-item-1" for="adults">
                 Взрослые:
               </label>
-              <input type="submit" value="-" class="sbt-adults">
+              <input type="button" value="-" class="sbt-adults">
               <input type="text" class="text adults-in" placeholder="2" id="adults">
-              <input type="submit" value="+" class="sbt-adults">
-
-
+              <input type="button" value="+" class="sbt-adults">
 
               <label class="modal-item-2" for="children">
                 Дети:
               </label>
-              <input type="submit" value="-" class="sbt-adults">
-              <input type="text" class="text  adults-in" placeholder="0" id="children">
-              <input type="submit" value="+" class="sbt-adults">
-
-
+              <input type="button" value="-" class="sbt-adults">
+              <input type="text" class="text  adults-in adults-in-js" placeholder="0" id="children">
+              <input type="button" value="+" class="sbt-adults">
 
               <input type="submit" value="Найти" class="submit">
             </form>
