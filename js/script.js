@@ -10,8 +10,8 @@ button.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.toggle("modal-show");
   popup.classList.remove("modal-error");
-  focusinput.focus();
-  console.log("Клик по ссылке вход");
+  /*focusinput.focus();*/
+  /*console.log("Клик по ссылке вход");*/
 })
 
 form.addEventListener("submit", function (evt) {
@@ -20,7 +20,7 @@ form.addEventListener("submit", function (evt) {
       popup.classList.remove("modal-error");
       popup.clientWidth;
       popup.classList.add("modal-error");
-      console.log("Работает");
+      /*console.log("Работает");*/
   }
 });
 

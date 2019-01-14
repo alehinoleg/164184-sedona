@@ -284,6 +284,7 @@ input[type="radio"].visually-hidden {
 .search .button:hover,
 .search .button:focus{
   background-color: #604e43;
+  cursor: pointer;
 }
 
 .search .button:active{
@@ -369,6 +370,10 @@ input[type="radio"].visually-hidden {
   color:#88b6d1;
 }
 
+.footer-social .social-buttom:active svg path{
+  fill: #88b6d1;
+}
+
 .footer-copyright{
   margin-left: 225px;
   display: flex;
@@ -380,8 +385,16 @@ input[type="radio"].visually-hidden {
   margin-left: 10px;
 }
 
-.footer-copyright img:hover{
-  color: #81b3d2;
+.footer-copyright a:hover svg path,
+.footer-copyright a:focus svg path,
+.footer-copyright a:focus svg rect,
+.footer-copyright a:hover svg rect{
+  fill: #81b3d2;
+}
+
+.footer-copyright a:active svg path,
+.footer-copyright a:active svg rect{
+  fill: #bdbbbc;
 }
 
 /*modal-window*/
@@ -392,49 +405,24 @@ input[type="radio"].visually-hidden {
   left: 50%;
   transform: translate(-50%, -100%);
   padding: 55px;
-  /*display: none;*/
   transition: .5s;
 }
 
 .modal-show{
-  /*display: block;*/
-  /*animation-name: bounce;*/
-  /*animation-duration: 0.6s;*/
   transform: translate(-50%, 0);
   z-index: 111;
 }
 
 @keyframes shake{
-  0%, 100%{ transform: translateX(-50%); }
-  10%, 30%, 50%, 70%, 90%{ transform: translateX(-55%); }
-  20%, 40%, 60%, 80%{transform: translateX(-45%);}
+  0%, 100%                  { transform: translateX(-50%); }
+  10%, 30%, 50%, 70%, 90%   { transform: translateX(-55%); }
+  20%, 40%, 60%, 80%        {transform: translateX(-45%);}
 }
 
 .modal-error{
   animation-name: shake;
   animation-duration: 0.8s;
 }
-
-/*
-.modal-form .group{
-  display: flex;
-  justify-content: space-between;
-}
-
-.modal-form .group-item{
-  width: 345px;
-  min-height: 40px;
-  background-color: #f2f2f2;
-}
-
-.modal-form input[type="text"]{
-  border: none;
-  outline: none;
-  -webkit-appearance: none;
-  vertical-align: middle;
-}
-*/
-
 
 .modal-form label{
   padding-top: 10px;
@@ -467,6 +455,7 @@ input[type="radio"].visually-hidden {
   background-color: #f2f2f2;
   color: #a9a9a9;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .modal-form .sbt-adults:hover{
@@ -526,6 +515,7 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   background-color: #81b3d2;
   color: #ffffff;
+  cursor: pointer;
   }
 
 .modal-search .text{
@@ -538,7 +528,9 @@ input[type="radio"].visually-hidden {
 
 .modal-search .text:focus{
   background-color: #ffffff;
-  outline-color: #e5e5e5;
+  border: 2px solid #e5e5e5;
+  padding: 8px;
+  outline: none;
 }
 
 .modal-form .calendar{
@@ -550,7 +542,8 @@ input[type="radio"].visually-hidden {
   background-color: transparent;
   position: absolute;
   left: 422px;
-  top: 1px;
+  top: 2px;
+  cursor: pointer;
 }
 
 .modal-search .submit:hover,
@@ -574,6 +567,10 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/calendarblue.svg");
   background-color: transparent;
   outline:none;
+}
+
+.modal-form .calendar:focus{
+  background-color: transparent;
 }
 
 /*catalog.html*/
@@ -642,19 +639,16 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/checkbox-on.svg");
 }
 
+.infrastructure-item input:checked:disabled + label::before,
+.house-type-item input:checked:disabled + label::before{
+  background-image: url("../img/checkbox-on.svg");
+  opacity: 0.3;
+}
+
 .infrastructure-item input:disabled + label::before,
 .house-type-item input:disabled + label::before{
-  background-image: url("../img/checkbox-off-disabled.svg");
-}
-
-.infrastructure-item input:checked:disabled + label::before{
-  background-image: url("../img/checkbox-off-disabled1.svg");
-}
-
-.infrastructure-item input:disabled ~ label,
-.house-type-item input:disabled ~ label{
-  color: #6a6a6a;
-  cursor: default;
+  background-image: url("../img/checkbox-off.svg");
+  opacity: 0.3;
 }
 
 .house-type{
@@ -716,6 +710,16 @@ input[type="radio"].visually-hidden {
 .price .slider{
   border-bottom: 2px solid #fff;
   margin-bottom: 20px;
+  width: 80%;
+  display: inline-block;
+}
+
+.price .slider-in{
+  width: 59px;
+  border-bottom: 2px solid #fff;
+  opacity: 0.3;
+  display: inline-block;
+  margin-bottom: 20px;
 }
 
 .price-submit .slider-bar{
@@ -737,6 +741,7 @@ input[type="radio"].visually-hidden {
   border-radius: 50%;
   position: absolute;
   box-shadow: 0px 3px 0px 0px #6a6a6a;
+  transform: translate(-2px, -2px);
 }
 
 .price-submit .slider-bar-min{
@@ -746,6 +751,11 @@ input[type="radio"].visually-hidden {
 .price-submit .slider-bar-max{
   top: 77px;
   right: 55px;
+}
+
+.price-submit .slider-bar-max:hover,
+.price-submit .slider-bar-max:focus{
+  transform: translate(2px, -2px);
 }
 
 .price-submit .submit-filter{
