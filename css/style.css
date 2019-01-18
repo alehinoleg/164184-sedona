@@ -1,7 +1,6 @@
 body{
   margin: 0;
   padding: 0;
-
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -14,20 +13,19 @@ a{
   text-decoration: none;
 }
 
-
 .visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
- position: absolute;
- width: 1px;
- height: 1px;
- margin: -1px;
- border: 0;
- padding: 0;
- white-space: nowrap;
- clip-path: inset(100%);
- clip: rect(0 0 0 0);
- overflow: hidden;
+  input[type="checkbox"].visually-hidden,
+  input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .centerman{
@@ -60,10 +58,6 @@ input[type="radio"].visually-hidden {
 
 .site-navigation li{
   width: 20%;
-}
-
-.site-navigation .info-li{
-
 }
 
 .site-navigation .photo-and-video{
@@ -101,7 +95,6 @@ input[type="radio"].visually-hidden {
   font-weight: 700;
   display: inherit;
   padding: 17px 0;
-
 }
 
 .site-navigation a:hover,
@@ -127,7 +120,6 @@ input[type="radio"].visually-hidden {
 }
 
 /*advantages*/
-
 .advantages{
   background-color: #ffffff;
 }
@@ -138,7 +130,7 @@ input[type="radio"].visually-hidden {
   text-align: center;
   display: block;
   width: 440px;
-  margin:0 auto;
+  margin: 0 auto;
   padding-top: 60px;
   padding-bottom: 10px;
 }
@@ -245,11 +237,11 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
 }
 
-
 /*search*/
 .search{
   text-align: center;
   background-color: #ffffff;
+  padding-bottom: 28px;
 }
 
 .search h2{
@@ -264,7 +256,7 @@ input[type="radio"].visually-hidden {
   display: block;
   width: 440px;
   margin: 0 auto;
-  margin-bottom: 52px;
+  margin-bottom: 86px;
   }
 
 .search .button{
@@ -276,9 +268,8 @@ input[type="radio"].visually-hidden {
   font-size: 21px;
   background-color: #766357;
   text-align: center;
-  padding: 32px 139px 32px 139px;
+  padding: 32px 139px 28px 139px;
   font-weight: 700;
-  border: none;
 }
 
 .search .button:hover,
@@ -298,6 +289,12 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   overflow: hidden;
+  background-color: #f2f2f2;
+  background-image: url("../img/maps.jpg");
+  background-repeat: no-repeat;
+  position: center center;
+  width: 1200px;
+  min-height: 593px;
 }
 
 .maps img{
@@ -308,21 +305,24 @@ input[type="radio"].visually-hidden {
 /*footer*/
 .main-foter{
   display: flex;
+  justify-content: space-around;
   background-color: rgba(255,255,255,0.9);
   margin-left: 0;
-  height: 120px;
+  min-height: 120px;
   align-items: center;
-  margin-top: -120px;
+  margin-top: -126px;
   z-index: 1;
   position: relative;
 }
 
 .main-foter1{
   display: flex;
+  justify-content: space-around;
   background-color: #fafcf7;
   margin-left: 0;
-  height: 120px;
+  min-height: 120px;
   align-items: center;
+  padding-left: 30px;
  }
 
 .main-foter1 .hashtag{
@@ -330,7 +330,6 @@ input[type="radio"].visually-hidden {
   line-height: 26px;
   text-transform: uppercase;
   font-weight: 700;
-  margin-left: 130px;
 }
 
 .main-foter .hashtag{
@@ -338,16 +337,20 @@ input[type="radio"].visually-hidden {
   line-height: 26px;
   text-transform: uppercase;
   font-weight: 700;
-  margin-left: 130px;
+  padding-left: 30px;
 }
 
-.footer-social ul{
+.footer-social{
   list-style: none;
   display: flex;
-  margin-left: 220px;
   flex-wrap: wrap;
   justify-content: space-between;
   width: 150px;
+  padding-left: 54px;
+}
+
+.footer-social li{
+  margin-bottom: 5px;
 }
 
 .footer-social .social-buttom{
@@ -370,14 +373,14 @@ input[type="radio"].visually-hidden {
   color:#88b6d1;
 }
 
-.footer-social .social-buttom:active svg path{
+.social-buttom:active path{
   fill: #88b6d1;
 }
 
 .footer-copyright{
-  margin-left: 225px;
   display: flex;
   align-items: center;
+  padding-left: 22px;
 }
 
 .footer-copyright a{
@@ -385,15 +388,15 @@ input[type="radio"].visually-hidden {
   margin-left: 10px;
 }
 
-.footer-copyright a:hover svg path,
-.footer-copyright a:focus svg path,
-.footer-copyright a:focus svg rect,
-.footer-copyright a:hover svg rect{
+.html-Academy-logo:hover path,
+.html-Academy-logo:focus path,
+.html-Academy-logo:focus rect,
+.html-Academy-logo:hover rect{
   fill: #81b3d2;
 }
 
-.footer-copyright a:active svg path,
-.footer-copyright a:active svg rect{
+.html-Academy-logo:active path,
+.html-Academy-logo:active rect{
   fill: #bdbbbc;
 }
 
@@ -416,7 +419,7 @@ input[type="radio"].visually-hidden {
 @keyframes shake{
   0%, 100%                  { transform: translateX(-50%); }
   10%, 30%, 50%, 70%, 90%   { transform: translateX(-55%); }
-  20%, 40%, 60%, 80%        {transform: translateX(-45%);}
+  20%, 40%, 60%, 80%        {transform: translateX(-45%); }
 }
 
 .modal-error{
@@ -443,7 +446,6 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
 }
 
-
 .modal-form .adults-in{
   width: 18px;
   text-align: center;
@@ -467,7 +469,7 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-form .group{
-  margin-bottom: 29px;
+  margin-bottom: 27px;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -509,14 +511,14 @@ input[type="radio"].visually-hidden {
   width: 100%;
   padding-top: 17px;
   padding-bottom: 15px;
-  margin-top: 53px;
+  margin-top: 56px;
   border: 0;
   font-size: 21px;
   text-transform: uppercase;
   background-color: #81b3d2;
   color: #ffffff;
   cursor: pointer;
-  }
+}
 
 .modal-search .text{
   background-color: #f2f2f2;
@@ -594,14 +596,14 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
 }
 
-.filter form legend{
+.filter legend{
   font-size: 16px;
   font-weight: 700;
   color: white;
 }
 
-.filter form ul li{
-  margin-bottom: 17px;
+.filter li{
+  margin-bottom: 23px;
 }
 
 .infrastructure{
@@ -631,6 +633,7 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
   display: inline-block;
+  vertical-align: middle;
   margin-right: 16px;
 }
 
@@ -651,8 +654,13 @@ input[type="radio"].visually-hidden {
   opacity: 0.3;
 }
 
+.infrastructure-item input:focus + label::before,
+.house-type-item input:focus + label::before{
+  outline: 2px solid #81b3d2;
+}
+
 .house-type{
-  margin-left: 91px;
+  margin-left: 95px;
   border: 0;
   width: 288px;
   flex-grow: 1;
@@ -709,9 +717,10 @@ input[type="radio"].visually-hidden {
 
 .price .slider{
   border-bottom: 2px solid #fff;
-  margin-bottom: 20px;
+  margin-bottom: 14px;
   width: 80%;
   display: inline-block;
+  vertical-align: baseline;
 }
 
 .price .slider-in{
@@ -719,7 +728,8 @@ input[type="radio"].visually-hidden {
   border-bottom: 2px solid #fff;
   opacity: 0.3;
   display: inline-block;
-  margin-bottom: 20px;
+  vertical-align: baseline;
+  margin-bottom: 14px;
 }
 
 .price-submit .slider-bar{
@@ -790,13 +800,18 @@ input[type="radio"].visually-hidden {
 
 .sort .sort-filter{
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
   font-size: 12px;
   line-height: 18px;
   flex-grow: 1;
-  margin-right: 490px;
   padding-top: 4px;
+}
+
+.sort .sort-filter::after{
+  content: "";
+  flex-grow: 1;
 }
 
 .sort .up{
@@ -808,6 +823,7 @@ input[type="radio"].visually-hidden {
 .sort h2{
   width: 150px;
   margin-left: 72px;
+  margin-right: 15px;
   font-size: 21px;
 }
 
@@ -818,12 +834,14 @@ input[type="radio"].visually-hidden {
 }
 
 .sort a{
+  margin-left: 36px;
   color: #cacaca;
   border-bottom: 1px dotted #81b3d2;
 }
 
 .sort .up-down{
   border-bottom: none;
+  margin: 0;
 }
 
 .sort a:hover,
@@ -831,12 +849,12 @@ input[type="radio"].visually-hidden {
   color: #81b3d2;
 }
 
-.sort .up-down:hover polyline,
-.sort .up-down:focus polyline{
+.up-down:hover polyline,
+.up-down:focus polyline{
   fill: #231f20;
 }
 
-.sort .up-down:active polyline{
+.up-down:active polyline{
   fill: #81b3d2;
 }
 
@@ -846,7 +864,6 @@ input[type="radio"].visually-hidden {
 }
 
 /*catalog*/
-
 .catalog-list{
   list-style: none;
   background-color: #fafcf7;
@@ -919,10 +936,12 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-info1 b{
-  padding: 3px 15px;
+  padding: 3px 12px;
+  padding-left: 15px;
   background-color: #f2f2f2;
   color: #666666;
   font-weight: 400;
+  margin-bottom: 4px;
 }
 
 .catalog-item .stars{
